@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+/* hr{
+    position: relative;
+    top: 20px;
+    border: none;   
+    height: 12px;
+    background: black;
+} */
+.wait{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.logo{
+    width: 110px;
+    height: 50px;
+}
+
+.titleHome{
+    font-size: 22px;
+    display: inline;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 160px;
+}
+
+ul li{
+    display: inline;
+    padding: 20px;
+}
+
+ul{
+    display: inline;
+}
+
+.navHome{
+    background-color: #A6D0DD;
+    padding: 10px;
+}
+
+.imgHome{
+    width:600px;
+    height: 350px;
+    
+}
+
+.table1{
+    background-color: #FFEADF;
+}
+
+.paraHome{
+    margin: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.headHome{
+    margin: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.imgDel{
+    height: 300px;
+    width: 300px;
+}
+
+.newDiv{
+    background-color: #A6D0DD;
+}
+
+.imgDel{
+    margin: 20px;
+}
+
+.part1{
+    text-align: center;
+    font-size: 28px;
+    width: 65%;
+    padding: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn1{
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+.btn1:hover{
+    background-color: #FFEADF;
+}
+
+.orderDiv{
+    background-color: #FFEADF;
+}
+
+.part_1{
+    width: 50%;
+    padding: 20px 120px 20px 150px;
+}
+
+.part_2{
+    text-align: center;
+    font-size: 28px;
+    padding: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn2{
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+.btn2:hover{
+    background-color: #A6D0DD;
+}
+
+.part_supp2{
+    padding-left: 40px;
+}
+
+.registerhead{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+    font-size: 34px;
+}
+
+.registerBlock{
+    justify-content: center;
+    text-align: center;
+}
+
+.card{
+    width: 50%;
+    margin: 0px auto;
+}
+
+.register{
+    background-color: #f0f9fc;
+    font-family: 'Raleway', sans-serif;
+}
+
+.spanRegister{
+    padding: 30px;
+}
+
+.registerTitle{
+    margin: 30px;
+    text-align: center;
+}
+
+input{
+    text-align: center;
+}
+
+.formRegister
+{
+    margin: 5px 300px;
+    width: 50%;
+
+}
+
+.btnInRegister{
+    margin: 30px 47%;
+}
+
+.tableTop{
+    text-align: center;
+}
+
+hr.new1 {
+    border-top: 3px double #FF6969;
+}
+
+.addMed{
+    background-color: #f0f9fc;
+    font-family: 'Raleway', sans-serif;
+}
+
+.addMedHead{
+    padding: 10px;
+    text-align: center;
+}
+
+.addMedInput{
+    width: 40%;
+    display: block;
+    margin: 20px auto;
+}
+
+.btnInAdd{
+    margin: 5px 47%;
+}
+
+.orderMed{
+    margin: 30px;
+}
+
+.supplyBlock{
+    background-color: #f0f9fc;
+    font-family: 'Raleway', sans-serif;
+}
+
+.supplyHead{
+    margin: 40px;
+    text-align: center;
+}
+
+.detailsSupply{
+    padding: 20px;
+    border: 3px double #FF6969;
+    margin: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.supplyName{
+    padding: 20px;
+}
+
+.supplyInput{
+    margin: 5px 40px;
+    width: 50%;
+}
+
+.tableSupply{
+    text-align: center;
+}
+
+.trackBlock{
+    background-color: #f0f9fc;
+    font-family: 'Raleway', sans-serif;
+}
+
+.tableTrack{
+    /* padding: 20px; */
+    margin-top: 40px;
+    text-align: center;
+}
+
+.trackTitle{
+    text-align: center;
+    margin: 60px 0px 20px 0px;
+}
+
+.trackBtn{
+    margin: 20px 47%;
+}
+
+.supplyInp{
+    margin: 0px 25%;
+    width: 50%;
+}
