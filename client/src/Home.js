@@ -28,10 +28,10 @@ function Home() {
             <img src={logo} className='logo'></img>
             <h3 className='titleHome'>Pharmaceutical Supply Chain</h3>
             <ul>
-                <li><a onClick={redirect_to_roles}>Register</a></li>
-                <li><a onClick={redirect_to_addmed}>Order Medicines</a></li>
-                <li><a onClick={redirect_to_supply}>Control Supply Chain</a></li>
-                <li><a onClick={redirect_to_track}>Track Medicines</a></li>
+                <li onClick={redirect_to_roles}>Register</li>
+                <li onClick={redirect_to_addmed}>Order Medicines</li>
+                <li onClick={redirect_to_supply}>Control Supply Chain</li>
+                <li onClick={redirect_to_track}>Track Medicines</li>
             </ul>
         </div>
             <table className='table1'>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useHistory } from "react-router-dom"
 import Web3 from "web3";
 import SupplyChainABI from "./artifacts/SupplyChain.json"
+import LoadingSpinner from './LoadingSpinner';
 
 function Supply() {
     const history = useHistory()
@@ -51,6 +52,8 @@ function Supply() {
             }
             setMED(med);
             setMedStage(medStage);
+            console.log(MedStage);
+            console.log(med);
             setloader(false);
         }
         else {
@@ -59,9 +62,7 @@ function Supply() {
     }
     if (loader) {
         return (
-            <div>
-                <h1 className="wait">Loading...</h1>
-            </div>
+            <LoadingSpinner />
         )
 
     }

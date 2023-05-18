@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Web3 from "web3";
 import SupplyChainABI from "./artifacts/SupplyChain.json"
 import { useHistory } from "react-router-dom"
-
+import LoadingSpinner from "./LoadingSpinner"
 function AssignRoles() {
     const history = useHistory()
     useEffect(() => {
@@ -86,9 +86,7 @@ function AssignRoles() {
     }
     if (loader) {
         return (
-            <div>
-                <h1 className="wait">Loading...</h1>
-            </div>
+           <LoadingSpinner />
         )
 
     }
