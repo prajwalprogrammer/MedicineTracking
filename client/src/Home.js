@@ -60,7 +60,6 @@ function Home() {
                     <tr>
                         <td className='part1'>
                             <p>Want to be a part of us?</p>
-                            <p>Register by clicking below...</p>
                             <button onClick={redirect_to_roles} className="btn1">Register</button>
                             <p></p>
                             <h6>Raw Material Supplier | Manufacturer | Distributor | Retailer | Consumer</h6>
