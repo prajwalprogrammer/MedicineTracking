@@ -3,8 +3,27 @@ import Web3 from "web3";
 import SupplyChainABI from "./artifacts/SupplyChain.json"
 import { useHistory } from "react-router-dom"
 import LoadingSpinner from "./LoadingSpinner"
+import logo from '../src/images/logo.png'
+import F from './F'
+
 function AssignRoles() {
     const history = useHistory()
+    const redirect_to_roles = () => {
+        history.push('/roles')
+    }
+    const redirect_to_last = () => 
+    {
+        history.push('/last')
+    }
+    const redirect_to_addmed = () => {
+        history.push('/addmed')
+    }
+    const redirect_to_supply = () => {
+        history.push('/supply')
+    }
+    const redirect_to_track = () => {
+        history.push('/track')
+    }
     useEffect(() => {
         loadWeb3();
         loadBlockchaindata();
@@ -182,6 +201,18 @@ function AssignRoles() {
 
     return (
         <div className='register'>
+            <div className='navHome'>
+            <img src={logo} className='logo'></img>
+            <h3 className='titleHome'>Pharmaceutical Supply Chain</h3>
+            <ul>
+                <li onClick={redirect_to_home}>Home</li>
+                <li onClick={redirect_to_roles}>Register</li>
+                <li onClick={redirect_to_addmed}>Order Medicines</li>
+                <li onClick={redirect_to_supply}>Control Supply Chain</li>
+                <li onClick={redirect_to_track}>Track Medicines</li>
+                <li onClick={redirect_to_last}>Contact Us</li>
+            </ul>
+        </div>
             <h1 className='registerhead'>Welcome to the register page </h1>
             <div className='registerBlock'>
                 <div className='card'>
@@ -307,6 +338,7 @@ function AssignRoles() {
                     })}
                 </tbody>
             </table>
+            <F/>
         </div>
     )
 }

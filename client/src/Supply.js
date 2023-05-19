@@ -3,9 +3,27 @@ import { useHistory } from "react-router-dom"
 import Web3 from "web3";
 import SupplyChainABI from "./artifacts/SupplyChain.json"
 import LoadingSpinner from './LoadingSpinner';
+import F from './F'
+import logo from '../src/images/logo.png'
 
 function Supply() {
     const history = useHistory()
+    const redirect_to_roles = () => {
+        history.push('/roles')
+    }
+    const redirect_to_last = () => 
+    {
+        history.push('/last')
+    }
+    const redirect_to_addmed = () => {
+        history.push('/addmed')
+    }
+    const redirect_to_supply = () => {
+        history.push('/supply')
+    }
+    const redirect_to_track = () => {
+        history.push('/track')
+    }
     useEffect(() => {
         loadWeb3();
         loadBlockchaindata();
@@ -134,16 +152,26 @@ function Supply() {
     }
     return (
         <div className='supplyBlock'>
-            <h1 className='registerhead'>Check the supply chain flow here</h1>
+            <div className='navHome'>
+            <img src={logo} className='logo'></img>
+            <h3 className='titleHome'>Pharmaceutical Supply Chain</h3>
+            <ul>
+                <li onClick={redirect_to_home}>Home</li>
+                <li onClick={redirect_to_roles}>Register</li>
+                <li onClick={redirect_to_addmed}>Order Medicines</li>
+                <li onClick={redirect_to_supply}>Control Supply Chain</li>
+                <li onClick={redirect_to_track}>Track Medicines</li>
+                <li onClick={redirect_to_last}>Contact Us</li>
+            </ul>
+        </div><h1 className='registerhead'>Check the supply chain flow here</h1>
              <div className='registerBlock'>
                 <div className='card'>
                 <span className='spanRegister'><b>Current Account Address:</b> {currentaccount}</span>
-                <span onClick={redirect_to_home} className="btn btn-outline-danger btn-sm">HOME</span>
                 </div>
             </div>
             {/* <span><b>Current Account Address:</b> {currentaccount}</span>
             <span onClick={redirect_to_home} className="btn btn-outline-danger btn-sm"> HOME</span> */}
-            <h6 className='supplyHead'><b>Supply Chain Flow:</b></h6>
+            <h6 className='supplyHead'><b>Standard Supply Chain Flow of Pharmaceuticals</b></h6>
             <p className='detailsSupply'>Medicine Order -&gt; Raw Material Supplier -&gt; Manufacturer -&gt; Distributor -&gt; Retailer -&gt; Consumer</p>
             <table className="table table-sm table-dark tableSupply">
                 <thead>
@@ -205,6 +233,7 @@ function Supply() {
                 <button className="btn btn-outline-success btn-sm" onSubmit={handlerSubmitSold}>Sold</button>
             </form>
             <hr />
+            <F/>
         </div>
     )
 }

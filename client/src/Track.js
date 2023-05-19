@@ -4,10 +4,26 @@ import Web3 from "web3";
 import SupplyChainABI from "./artifacts/SupplyChain.json";
 import LoadingSpinner from "./LoadingSpinner";
 import QRCode from "react-qr-code";
-
+import F from './F'
+import logo from '../src/images/logo.png'
 
 function Track() {
-  const history = useHistory();
+    const history = useHistory()
+    const redirect_to_roles = () => {
+        history.push('/roles')
+    }
+    const redirect_to_last = () => {
+        history.push('/last')
+    }
+    const redirect_to_addmed = () => {
+        history.push('/addmed')
+    }
+    const redirect_to_supply = () => {
+        history.push('/supply')
+    }
+    const redirect_to_track = () => {
+        history.push('/track')
+    }
   useEffect(() => {
     loadWeb3();
     loadBlockchaindata();
@@ -746,17 +762,23 @@ function Track() {
 
   return (
     <div className="trackBlock">
-      <h1 className="registerhead">Track your medicine here</h1>
+      <div className='navHome'>
+            <img src={logo} className='logo'></img>
+            <h3 className='titleHome'>Pharmaceutical Supply Chain</h3>
+            <ul>
+                <li onClick={redirect_to_home}>Home</li>
+                <li onClick={redirect_to_roles}>Register</li>
+                <li onClick={redirect_to_addmed}>Order Medicines</li>
+                <li onClick={redirect_to_supply}>Control Supply Chain</li>
+                <li onClick={redirect_to_track}>Track Medicines</li>
+                <li onClick={redirect_to_last}>Contact Us</li>
+            </ul>
+        </div>
+      <h1 className="registerhead">Track your medicine here!</h1>
       <div className="registerBlock">
         <div className="card">
           <span className="spanRegister">
             <b>Current Account Address:</b> {currentaccount}
-          </span>
-          <span
-            onClick={redirect_to_home}
-            className="btn btn-outline-danger btn-sm"
-          >
-            HOME
           </span>
         </div>
       </div>
@@ -802,68 +824,14 @@ function Track() {
         </button>
       </form>
       <button
-        className="btn btn-outline-success btn-sm trackBtn"
-        onClick={() => showQR()}
-      >
-        Scan QR
+          className="btn btn-outline-success btn-sm trackBtn"
+          onClick={() => showQR()}
+        >
+          Get QR of your Medicine
       </button>
+      <F/>
     </div>
   );
 }
 
 export default Track;
-
-/*
-var dat = "Medicine:
-Medicine ID: " + {MED[ID].id} +
-"Name: " +{MED[ID].name} + " 
-Description: " +{MED[ID].description} + "
-Current stage: " + {MedStage[ID]}"
-
-Raw Materials Supplied by:
-Supplier ID: 3
-
-Name: ddd
-
-Place: India
-
-➔
-Manufactured by:
-Manufacturer ID: 1
-
-Name: Ayush
-
-Place: Mumbai
-
-➔
-Manufactured by:
-Manufacturer ID: 1
-
-Name: Ayush
-
-Place: Mumbai
-➔
-Manufactured by:
-Manufacturer ID: 1
-
-Name: Ayush
-
-Place: Mumbai
-➔
-Manufactured by:
-Manufacturer ID: 1
-
-Name: Ayush
-
-Place: Mumbai
-
-➔
-Manufactured by:
-Manufacturer ID: 1
-
-Name: Ayush
-
-Place: Mumbai
-"
-
-*/

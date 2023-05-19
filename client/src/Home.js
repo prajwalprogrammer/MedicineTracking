@@ -1,15 +1,18 @@
 import React from 'react'
 import { useHistory } from "react-router-dom"
-import img1 from "../src/images/medicine.jpg"
 import imgGif from "../src/images/medGif.gif"
 import imgDel from "../src/images/medicine-delivery.png"
 import vitamin from "../src/images/vitamin.png"
 import medAll from "../src/images/medAll.png"
 import tracking from '../src/images/tracking.png'
 import logo from '../src/images/logo.png'
+import F from './F'
 
 function Home() {
     const history = useHistory()
+    const redirect_to_home = () => {
+        history.push('/')
+    }
     const redirect_to_roles = () => {
         history.push('/roles')
     }
@@ -22,16 +25,21 @@ function Home() {
     const redirect_to_track = () => {
         history.push('/track')
     }
+    const redirect_to_last = () => {
+        history.push('/last')
+    }
     return (
         <div>
         <div className='navHome'>
             <img src={logo} className='logo'></img>
             <h3 className='titleHome'>Pharmaceutical Supply Chain</h3>
             <ul>
+                <li onClick={redirect_to_home}>Home</li>
                 <li onClick={redirect_to_roles}>Register</li>
                 <li onClick={redirect_to_addmed}>Order Medicines</li>
                 <li onClick={redirect_to_supply}>Control Supply Chain</li>
                 <li onClick={redirect_to_track}>Track Medicines</li>
+                <li onClick={redirect_to_last}>Contact Us</li>
             </ul>
         </div>
             <table className='table1'>
@@ -113,6 +121,7 @@ function Home() {
             </div>
             {/* <h5><b>Track</b> the medicines:</h5>
             <button onClick={redirect_to_track} className="btn btn-outline-primary btn-sm">Track Medicines</button> */}
+            <F/>
         </div>
     )
 }

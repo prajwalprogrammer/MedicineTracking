@@ -64,7 +64,7 @@ return (
 		<br />
 		
 		<QRCode
-			title="GeeksForGeeks"
+			title="FakeMedicineDetection"
 			value={value}
 			bgColor={back}
 			fgColor={fore}
