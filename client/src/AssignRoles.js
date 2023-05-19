@@ -203,14 +203,14 @@ function AssignRoles() {
         <div className='register'>
             <div className='navHome'>
             <img src={logo} className='logo'></img>
-            <h3 className='titleHome'>Pharmaceutical Supply Chain</h3>
+            <h3 className='titleHome'onClick={redirect_to_home}>Pharmaceutical Supply Chain</h3>
             <ul>
-                <li onClick={redirect_to_home}>Home</li>
-                <li onClick={redirect_to_roles}>Register</li>
-                <li onClick={redirect_to_addmed}>Order Medicines</li>
-                <li onClick={redirect_to_supply}>Control Supply Chain</li>
-                <li onClick={redirect_to_track}>Track Medicines</li>
-                <li onClick={redirect_to_last}>Contact Us</li>
+                <li class="hover-underline-animation" onClick={redirect_to_home}>Home</li>
+                <li class="hover-underline-animation" onClick={redirect_to_roles}>Register</li>
+                <li class="hover-underline-animation" onClick={redirect_to_addmed}>Order Medicines</li>
+                <li class="hover-underline-animation" onClick={redirect_to_supply}>Control Supply Chain</li>
+                <li class="hover-underline-animation" onClick={redirect_to_track}>Track Medicines</li>
+                <li class="hover-underline-animation" onClick={redirect_to_last}>Contact Us</li>
             </ul>
         </div>
             <h1 className='registerhead'>Welcome to the register page </h1>

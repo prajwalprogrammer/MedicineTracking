@@ -6,6 +6,7 @@ import vitamin from "../src/images/vitamin.png"
 import medAll from "../src/images/medAll.png"
 import tracking from '../src/images/tracking.png'
 import logo from '../src/images/logo.png'
+import SocialFollow from './SocialFollow'
 import F from './F'
 
 function Home() {
@@ -32,14 +33,14 @@ function Home() {
         <div>
         <div className='navHome'>
             <img src={logo} className='logo'></img>
-            <h3 className='titleHome'>Pharmaceutical Supply Chain</h3>
+            <h3 className='titleHome' onClick={redirect_to_home}>Pharmaceutical Supply Chain</h3>
             <ul>
-                <li onClick={redirect_to_home}>Home</li>
-                <li onClick={redirect_to_roles}>Register</li>
-                <li onClick={redirect_to_addmed}>Order Medicines</li>
-                <li onClick={redirect_to_supply}>Control Supply Chain</li>
-                <li onClick={redirect_to_track}>Track Medicines</li>
-                <li onClick={redirect_to_last}>Contact Us</li>
+                <li class="hover-underline-animation" onClick={redirect_to_home}>Home</li>
+                <li class="hover-underline-animation" onClick={redirect_to_roles}>Register</li>
+                <li class="hover-underline-animation" onClick={redirect_to_addmed}>Order Medicines</li>
+                <li class="hover-underline-animation" onClick={redirect_to_supply}>Control Supply Chain</li>
+                <li class="hover-underline-animation" onClick={redirect_to_track}>Track Medicines</li>
+                <li class="hover-underline-animation" onClick={redirect_to_last}>Contact Us</li>
             </ul>
         </div>
             <table className='table1'>
