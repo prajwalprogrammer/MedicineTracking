@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 /* hr{
     position: relative;
@@ -9,6 +10,11 @@
     height: 12px;
     background: black;
 } */
+
+body{
+    background-color: #f0f9fc;
+}
+
 .wait{
     text-align: center;
     margin-top: 5rem;
@@ -253,4 +259,70 @@ hr.new1 {
 .supplyInp{
     margin: 0px 25%;
     width: 50%;
+}
+
+/* track */
+.col-4{
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #a09c9c;
+    background-image: linear-gradient(135deg, #5d5c5c 0%, #1a1a1d 100%);
+    color: white;
+    border: 2px solid white;
+}
+
+.col-3{
+    border: 2px solid black;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #d9fae8;
+    background-image: linear-gradient(45deg, #e1ffef 0%, #faf8c9 100%);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.symbolName{
+    position: absolute;
+    left: 300px;
+    border: 2px solid white;
+    padding: 8px;
+    bottom: 20px;
+    border-radius: 388px;
+    color: gold;
+}
+
+.arrow{
+    position: relative;
+    top: 138px;
+}
+
+:root{
+    background-color: #f0f9fc;
+}
+
+.container-xl{
+    background-color: #f0f9fc;
+}
+
+body{
+    background-color: #f0f9fc;
+}
+
+.App{
+    background-color: #f0f9fc;
+}
+
+.row{
+    position: relative;
+    left: 60px;
+}
+
+.btnSectionTrack{
+    margin: 70px;
+}
+
+u{
+    text-decoration: none;
+    font-weight: bold;
 }

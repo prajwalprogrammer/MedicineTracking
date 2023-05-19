@@ -4,6 +4,9 @@ import Web3 from "web3";
 import SupplyChainABI from "./artifacts/SupplyChain.json";
 import LoadingSpinner from "./LoadingSpinner";
 import QRCode from "react-qr-code";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSomeIcon } from '@fortawesome/free-solid-svg-icons';
+
 
 function Track() {
   const history = useHistory();
@@ -154,6 +157,7 @@ function Track() {
             <b>Current stage: </b>
             {MedStage[ID]}
           </span>
+          <p className="symbolName">M</p>
         </article>
         <hr />
         <br />
@@ -174,7 +178,7 @@ function Track() {
               {RMS[MED[ID].RMSid].place}
             </p>
           </article>
-          <span>&#10132;</span>
+          <span className="arrow">&#10132;</span>
           <article className="col-3">
             <h4>
               <u>Manufactured by:</u>
@@ -191,7 +195,7 @@ function Track() {
               {MAN[MED[ID].MANid].place}
             </p>
           </article>
-          <span>&#10132;</span>
+          <span className="arrow">&#10132;</span>
           <article className="col-3">
             <h4>
               <u>Distributed by:</u>
@@ -208,7 +212,7 @@ function Track() {
               {DIS[MED[ID].DISid].place}
             </p>
           </article>
-          <span>&#10132;</span>
+          <span className="arrow">&#10132;</span>
           <article className="col-3">
             <h4>
               <u>Retailed by:</u>
@@ -225,7 +229,7 @@ function Track() {
               {RET[MED[ID].RETid].place}
             </p>
           </article>
-          <span>&#10132;</span>
+          <span className="arrow">&#10132;</span>
           <article className="col-3">
             <h4>
               <u>Sold</u>
