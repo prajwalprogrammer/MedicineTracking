@@ -4,8 +4,6 @@ import Web3 from "web3";
 import SupplyChainABI from "./artifacts/SupplyChain.json";
 import LoadingSpinner from "./LoadingSpinner";
 import QRCode from "react-qr-code";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSomeIcon } from '@fortawesome/free-solid-svg-icons';
 
 
 function Track() {
@@ -119,11 +117,21 @@ function Track() {
   if (QRData) {
     return (
       <div className="container-xl">
+      <h1 className="qrName">Scan the QR Code</h1>
+        <br/>
+        <QRCode title="QRCode" value={QRData} />
         <br/>
         <br/>
         <br/>
-        <br/>
-        <QRCode title="GeeksForGeeks" value={QRData} />
+        <span
+          onClick={() => {
+            history.push("/");
+          }}
+          className="btn btn-outline-danger btn-sm"
+        >
+          {" "}
+          HOME
+        </span>
       </div>
     );
   }
