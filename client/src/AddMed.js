@@ -122,7 +122,6 @@ function AddMed() {
             <div className='registerBlock'>
                 <div className='card'>
                 <span className='spanRegister'><b>Current Account Address:</b> {currentaccount}</span>
-                <span onClick={redirect_to_home} className="btn btn-outline-danger btn-sm">HOME</span>
                 </div>
             </div>
             <hr className='new1'></hr>
