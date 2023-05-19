@@ -116,7 +116,7 @@ function Track() {
   };
   if (QRData) {
     return (
-      <div className="container-xl">
+      <div className="container-xlQR">
       <h1 className="qrName">Scan the QR Code</h1>
         <br/>
         <QRCode title="QRCode" value={QRData} />

@@ -327,10 +327,11 @@ u{
     font-weight: bold;
 }
 
-.container-xl{
-    text-align: center;
-}
 
 .qrName{
     margin: 40px;
+}
+
+.container-xlQR{
+    text-align: center;
 }
